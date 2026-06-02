@@ -1,0 +1,36 @@
+.blogDiv{
+    width: 700px;
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px;
+    margin: 0 auto 35px auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.blogDiv:hover{
+    transform: translateY(-8px);
+    box-shadow: 2px 16px 30px rgba(0,0,0,0.25);
+}
+
+.images{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+@media (max-width: 600px){
+    .blogDiv{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .images{
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+}

@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: arial;
+}
+body {
+    padding-top: 70px;
+}
+header {
+    background-color: #f0f0f0;
+    padding: 15px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.logo {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    z-index: 999;
+}
+.overlay.active {
+    display: block;
+}
+li {
+    display: inline-block;
+}
+li a {
+    color: #000000;
+    font-size: 18px;
+    margin-right: 20px;
+}
+li a:hover {
+    color: #6d5a5a;
+}
+.btn-login {
+    background-color: transparent;
+    color: #000000;
+    border: 2px solid #000000;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.btn-signup {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #000000;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn-login:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+.btn-signup:hover {
+    background-color: #333333;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    border-radius: 3px;
+}
+@media (max-width: 859px) {
+    .hamburger {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        background-color: #f0f0f0;
+        padding: 20px 9%;
+        gap: 15px;
+    }
+    .nav-links.open {
+        display: flex;
+    }
+    .nav-links li {
+        display: block;
+    }
+}
+.hero {
+    padding: 60px 9%;
+}
+.hero-pre {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.hero-list li {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+body{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.568), rgba(255, 255, 255, 0)), url('../images/laptop-with-code-on-screen-on-white-table-free-photo.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #000000;
+    font-weight: bold;
+}
+footer {
+    margin-top: 60px;
+    border-top: 1px solid rgba(0,0,0,0.15);
+    padding: 40px 9% 0 9%;
+    background-color: transparent;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-logo {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 0;
+}
+
+.footer-tagline {
+    font-size: 14px;
+    color: #000000;
+    text-align: left;
+    margin-left: 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-col-title {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 0;
+}
+
+.footer-col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.footer-col ul li a {
+    font-size: 14px;
+    color: #000000;
+    margin-right: 0;
+}
+
+.footer-col ul li a:hover {
+    color: #000;
+}
+
+.coming-soon {
+    color: #000000 !important;
+    cursor: default;
+    pointer-events: none;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-contact a {
+    font-size: 14px;
+    color: #000000;
+    display: block;
+}
+
+.footer-contact a:hover {
+    color: #000;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid rgba(0,0,0,0.15);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: #000000;
+    margin-left: 0;
+}
+
