@@ -8,5 +8,6 @@ h1,p,pre{
 }
 
 .fade-in.visible {
+    opacity: 1;
     transform: translateY(0);
 }
